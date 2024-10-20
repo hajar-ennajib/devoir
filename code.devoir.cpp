@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std ;
 void test(const vector<int>& params){
-    cout<<"fonction appelee avec "<<params.size()<<" parametres"<<endl;
+    cout<<params.size()<<" parametres"<<endl;
 }
 int main()
 {
@@ -13,7 +13,7 @@ int main()
             test(params);
         }
     }catch (const bad_alloc& e){
-        cout<<"error :"<<e.what()<<endl;
+        cout<<"erreur :"<<e.what()<<endl;
     }
     return 0;
 }
